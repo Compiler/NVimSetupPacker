@@ -5,7 +5,7 @@ local lsp = require("lsp-zero")
 
 -- Mason-lspconfig configuration
 require("mason-lspconfig").setup({
-    ensure_installed = {"lua_ls", "rust_analyzer", "clangd" },
+    ensure_installed = {"lua_ls", "rust_analyzer", "clangd"}, --qml6_lsp
     handlers = {
     lsp.default_setup,
     clangd = function()
@@ -73,8 +73,17 @@ lsp.on_attach(function(client, bufnr)
     vim.keymap.set("n", "<leader>aa", function() vim.lsp.buf.code_action() end, opts)
 end)
 
+
 lsp.setup()
 
 vim.diagnostic.config({
     virtual_text = true,
 })
+
+
+
+
+
+
+
+
