@@ -4,6 +4,10 @@ return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
     use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
+    use {
         "catppuccin/nvim",
         as = "catppuccin",
         config = function()
@@ -88,4 +92,12 @@ return require('packer').startup(function(use)
             {'L3MON4D3/LuaSnip'},
         }
     }
-end)
+    use 'tpope/vim-obsession'
+    use {
+        'mhinz/vim-startify',
+        config = function()
+            -- Prevent Startify from changing the current working directory
+            vim.g.startify_change_to_dir = 0
+        end
+    }
+    end)

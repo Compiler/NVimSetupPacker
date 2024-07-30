@@ -80,7 +80,7 @@ _G.packer_plugins = {
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   catppuccin = {
-    config = { "\27LJ\2\2\15\0\1\2\0\0\0\0024\1\0\0L\1\2\0¦\1\1\0\3\0\v\0\0166\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\0005\2\3\0=\2\5\0013\2\6\0=\2\a\1B\0\2\0016\0\b\0009\0\t\0009\0\n\0'\1\1\0B\0\2\1K\0\1\0\16colorscheme\bcmd\bvim\22custom_highlights\0\17integrations\1\0\0\1\0\1\15treesitter\2\nsetup\15catppuccin\frequire\0" },
+    config = { "\27LJ\2\2¶\14\0\1\4\0x\0Î\0015\1\3\0005\2\1\0009\3\0\0=\3\2\2=\2\4\0015\2\6\0009\3\5\0=\3\2\0025\3\a\0=\3\b\2=\2\t\0015\2\v\0009\3\n\0=\3\2\0025\3\f\0=\3\b\2=\2\r\0015\2\14\0009\3\0\0=\3\2\2=\2\15\0015\2\16\0009\3\0\0=\3\2\0025\3\17\0=\3\b\2=\2\18\0015\2\20\0009\3\19\0=\3\2\2=\2\21\0015\2\23\0009\3\22\0=\3\2\0025\3\24\0=\3\b\2=\2\25\0015\2\27\0009\3\26\0=\3\2\2=\2\28\0015\2\30\0009\3\29\0=\3\2\0025\3\31\0=\3\b\2=\2 \0015\2\"\0009\3!\0=\3\2\2=\2#\0015\2%\0009\3$\0=\3\2\0025\3&\0=\3\b\2=\2'\0015\2(\0009\3\n\0=\3\2\2=\2)\0015\2+\0009\3*\0=\3\2\0025\3,\0=\3\b\2=\2-\0015\2.\0009\3!\0=\3\2\2=\2/\0015\0021\0009\0030\0=\3\2\2=\0022\0015\0023\0009\3\19\0=\3\2\0025\0034\0=\3\b\2=\0025\0015\0026\0009\0030\0=\3\2\2=\0027\0015\0028\0009\3\0\0=\3\2\2=\0029\0015\2:\0009\3\26\0=\3\2\2=\2;\0015\2=\0009\3<\0=\3\2\2=\2>\0015\2@\0009\3?\0=\3\2\2=\2A\0015\2B\0009\3\0\0=\3\2\2=\2C\0015\2D\0009\3\5\0=\3\2\2=\2E\0015\2G\0009\3F\0=\3\2\0025\3H\0=\3\b\2=\2I\0015\2J\0009\0030\0=\3\2\2=\2K\0015\2L\0009\3\22\0=\3\2\2=\2M\0015\2N\0009\3\5\0=\3\2\0025\3O\0=\3\b\2=\2P\0015\2Q\0009\3*\0=\3\2\2=\2R\0015\2S\0009\3\n\0=\3\2\0025\3T\0=\3\b\2=\2U\0015\2V\0009\0030\0=\3\2\0025\3W\0=\3\b\2=\2X\0015\2Y\0009\3\0\0=\3\2\0025\3Z\0=\3\b\2=\2[\0015\2\\\0009\3*\0=\3\2\2=\2]\0015\2_\0009\3^\0=\3\2\2=\2`\0015\2a\0009\3\22\0=\3\2\2=\2b\0015\2c\0009\3\19\0=\3\2\2=\2d\0015\2e\0009\3\5\0=\3\2\0025\3f\0=\3\b\2=\2g\0015\2h\0009\3\5\0=\3\2\2=\2i\0015\2j\0009\3$\0=\3\2\2=\2k\0015\2l\0009\3\19\0=\3\2\0025\3m\0=\3\b\2=\2n\0015\2o\0009\3\19\0=\3\2\0025\3p\0=\3\b\2=\2q\0015\2r\0009\3F\0=\3\2\2=\2s\0015\2t\0009\3\n\0=\3\2\2=\2u\0015\2v\0009\3\29\0=\3\2\2=\2w\1L\1\2\0\v@event\1\0\0\15@attribute\1\0\0\16@annotation\1\0\0\f@repeat\1\2\0\0\14underline\1\0\0\17@conditional\1\2\0\0\vitalic\1\0\0\14@constant\1\0\0\15@structure\1\0\0\18@storageclass\1\2\0\0\tbold\1\0\0\20@variable.local\1\0\0\15@parameter\1\0\0\v@field\1\0\0\14rosewater\17@constructor\1\0\0\19@exception.qml\1\2\0\0\tbold\1\0\0\22@text.literal.qml\1\2\0\0\vitalic\1\0\0\20@text.title.qml\1\2\0\0\tbold\1\0\0\15@label.qml\1\0\0\15@debug.qml\1\2\0\0\freverse\1\0\0\17@preproc.qml\1\0\0\17@include.qml\1\0\0\19@namespace.qml\1\2\0\0\tbold\1\0\0\rflamingo\23@tag.attribute.qml\1\0\0\r@tag.qml\1\0\0\31@punctuation.delimiter.qml\1\0\0\roverlay1\29@punctuation.bracket.qml\1\0\0\roverlay2\18@operator.qml\1\0\0\17@comment.qml\1\0\0\15@float.qml\1\0\0\17@boolean.qml\1\2\0\0\vitalic\1\0\0\16@number.qml\1\0\0\tteal\16@string.qml\1\0\0\21@constructor.qml\1\2\0\0\tbold\1\0\0\rsapphire\16@method.qml\1\0\0\26@function.builtin.qml\1\2\0\0\tbold\1\0\0\npeach\18@function.qml\1\0\0\ngreen\24@keyword.return.qml\1\2\0\0\tbold\1\0\0\tpink\26@keyword.operator.qml\1\0\0\bsky\17@keyword.qml\1\2\0\0\vitalic\1\0\0\vmaroon\24@variable.local.qml\1\0\0\nmauve\26@variable.builtin.qml\1\2\0\0\vitalic\1\0\0\18@variable.qml\1\0\0\14@type.qml\1\2\0\0\tbold\1\0\0\tblue\18@property.qml\nstyle\1\2\0\0\vitalic\1\0\0\vyellow\fComment\1\0\0\afg\1\0\0\bredÚ\1\1\0\4\0\r\0\0216\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\0026\1\0\0'\2\3\0B\1\2\0029\1\4\0015\2\6\0005\3\5\0=\3\a\0023\3\b\0=\3\t\2B\1\2\0016\1\n\0009\1\v\0019\1\f\1'\2\3\0B\1\2\1K\0\1\0\16colorscheme\bcmd\bvim\22custom_highlights\0\17integrations\1\0\0\1\0\1\15treesitter\2\nsetup\15catppuccin\16get_palette\24catppuccin.palettes\frequire\0" },
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/catppuccin",
     url = "https://github.com/catppuccin/nvim"
@@ -120,6 +120,11 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -135,6 +140,12 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["rose-pine"] = {
+    config = { "\27LJ\2\0029\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0" },
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/rose-pine",
+    url = "https://github.com/rose-pine/neovim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -149,14 +160,28 @@ _G.packer_plugins = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-obsession"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/vim-obsession",
+    url = "https://github.com/tpope/vim-obsession"
+  },
+  ["vim-startify"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/vim-startify",
+    url = "https://github.com/mhinz/vim-startify"
   }
 }
 
 time([[Defining packer_plugins]], false)
 -- Config for: catppuccin
 time([[Config for catppuccin]], true)
-try_loadstring("\27LJ\2\2\15\0\1\2\0\0\0\0024\1\0\0L\1\2\0¦\1\1\0\3\0\v\0\0166\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\4\0005\2\3\0=\2\5\0013\2\6\0=\2\a\1B\0\2\0016\0\b\0009\0\t\0009\0\n\0'\1\1\0B\0\2\1K\0\1\0\16colorscheme\bcmd\bvim\22custom_highlights\0\17integrations\1\0\0\1\0\1\15treesitter\2\nsetup\15catppuccin\frequire\0", "config", "catppuccin")
+try_loadstring("\27LJ\2\2¶\14\0\1\4\0x\0Î\0015\1\3\0005\2\1\0009\3\0\0=\3\2\2=\2\4\0015\2\6\0009\3\5\0=\3\2\0025\3\a\0=\3\b\2=\2\t\0015\2\v\0009\3\n\0=\3\2\0025\3\f\0=\3\b\2=\2\r\0015\2\14\0009\3\0\0=\3\2\2=\2\15\0015\2\16\0009\3\0\0=\3\2\0025\3\17\0=\3\b\2=\2\18\0015\2\20\0009\3\19\0=\3\2\2=\2\21\0015\2\23\0009\3\22\0=\3\2\0025\3\24\0=\3\b\2=\2\25\0015\2\27\0009\3\26\0=\3\2\2=\2\28\0015\2\30\0009\3\29\0=\3\2\0025\3\31\0=\3\b\2=\2 \0015\2\"\0009\3!\0=\3\2\2=\2#\0015\2%\0009\3$\0=\3\2\0025\3&\0=\3\b\2=\2'\0015\2(\0009\3\n\0=\3\2\2=\2)\0015\2+\0009\3*\0=\3\2\0025\3,\0=\3\b\2=\2-\0015\2.\0009\3!\0=\3\2\2=\2/\0015\0021\0009\0030\0=\3\2\2=\0022\0015\0023\0009\3\19\0=\3\2\0025\0034\0=\3\b\2=\0025\0015\0026\0009\0030\0=\3\2\2=\0027\0015\0028\0009\3\0\0=\3\2\2=\0029\0015\2:\0009\3\26\0=\3\2\2=\2;\0015\2=\0009\3<\0=\3\2\2=\2>\0015\2@\0009\3?\0=\3\2\2=\2A\0015\2B\0009\3\0\0=\3\2\2=\2C\0015\2D\0009\3\5\0=\3\2\2=\2E\0015\2G\0009\3F\0=\3\2\0025\3H\0=\3\b\2=\2I\0015\2J\0009\0030\0=\3\2\2=\2K\0015\2L\0009\3\22\0=\3\2\2=\2M\0015\2N\0009\3\5\0=\3\2\0025\3O\0=\3\b\2=\2P\0015\2Q\0009\3*\0=\3\2\2=\2R\0015\2S\0009\3\n\0=\3\2\0025\3T\0=\3\b\2=\2U\0015\2V\0009\0030\0=\3\2\0025\3W\0=\3\b\2=\2X\0015\2Y\0009\3\0\0=\3\2\0025\3Z\0=\3\b\2=\2[\0015\2\\\0009\3*\0=\3\2\2=\2]\0015\2_\0009\3^\0=\3\2\2=\2`\0015\2a\0009\3\22\0=\3\2\2=\2b\0015\2c\0009\3\19\0=\3\2\2=\2d\0015\2e\0009\3\5\0=\3\2\0025\3f\0=\3\b\2=\2g\0015\2h\0009\3\5\0=\3\2\2=\2i\0015\2j\0009\3$\0=\3\2\2=\2k\0015\2l\0009\3\19\0=\3\2\0025\3m\0=\3\b\2=\2n\0015\2o\0009\3\19\0=\3\2\0025\3p\0=\3\b\2=\2q\0015\2r\0009\3F\0=\3\2\2=\2s\0015\2t\0009\3\n\0=\3\2\2=\2u\0015\2v\0009\3\29\0=\3\2\2=\2w\1L\1\2\0\v@event\1\0\0\15@attribute\1\0\0\16@annotation\1\0\0\f@repeat\1\2\0\0\14underline\1\0\0\17@conditional\1\2\0\0\vitalic\1\0\0\14@constant\1\0\0\15@structure\1\0\0\18@storageclass\1\2\0\0\tbold\1\0\0\20@variable.local\1\0\0\15@parameter\1\0\0\v@field\1\0\0\14rosewater\17@constructor\1\0\0\19@exception.qml\1\2\0\0\tbold\1\0\0\22@text.literal.qml\1\2\0\0\vitalic\1\0\0\20@text.title.qml\1\2\0\0\tbold\1\0\0\15@label.qml\1\0\0\15@debug.qml\1\2\0\0\freverse\1\0\0\17@preproc.qml\1\0\0\17@include.qml\1\0\0\19@namespace.qml\1\2\0\0\tbold\1\0\0\rflamingo\23@tag.attribute.qml\1\0\0\r@tag.qml\1\0\0\31@punctuation.delimiter.qml\1\0\0\roverlay1\29@punctuation.bracket.qml\1\0\0\roverlay2\18@operator.qml\1\0\0\17@comment.qml\1\0\0\15@float.qml\1\0\0\17@boolean.qml\1\2\0\0\vitalic\1\0\0\16@number.qml\1\0\0\tteal\16@string.qml\1\0\0\21@constructor.qml\1\2\0\0\tbold\1\0\0\rsapphire\16@method.qml\1\0\0\26@function.builtin.qml\1\2\0\0\tbold\1\0\0\npeach\18@function.qml\1\0\0\ngreen\24@keyword.return.qml\1\2\0\0\tbold\1\0\0\tpink\26@keyword.operator.qml\1\0\0\bsky\17@keyword.qml\1\2\0\0\vitalic\1\0\0\vmaroon\24@variable.local.qml\1\0\0\nmauve\26@variable.builtin.qml\1\2\0\0\vitalic\1\0\0\18@variable.qml\1\0\0\14@type.qml\1\2\0\0\tbold\1\0\0\tblue\18@property.qml\nstyle\1\2\0\0\vitalic\1\0\0\vyellow\fComment\1\0\0\afg\1\0\0\bredÚ\1\1\0\4\0\r\0\0216\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\0026\1\0\0'\2\3\0B\1\2\0029\1\4\0015\2\6\0005\3\5\0=\3\a\0023\3\b\0=\3\t\2B\1\2\0016\1\n\0009\1\v\0019\1\f\1'\2\3\0B\1\2\1K\0\1\0\16colorscheme\bcmd\bvim\22custom_highlights\0\17integrations\1\0\0\1\0\1\15treesitter\2\nsetup\15catppuccin\16get_palette\24catppuccin.palettes\frequire\0", "config", "catppuccin")
 time([[Config for catppuccin]], false)
+-- Config for: rose-pine
+time([[Config for rose-pine]], true)
+try_loadstring("\27LJ\2\0029\0\0\2\0\3\0\0056\0\0\0009\0\1\0'\1\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
+time([[Config for rose-pine]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
