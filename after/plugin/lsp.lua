@@ -5,7 +5,7 @@ local lsp = require("lsp-zero")
 
 -- Mason-lspconfig configuration
 require("mason-lspconfig").setup({
-    ensure_installed = {"lua_ls", "rust_analyzer", "clangd"}, --qmlls, qml6_lsp
+    ensure_installed = {"lua_ls", "rust_analyzer", "clangd", "glslls"}, --qmlls, qml6_lsp
     handlers = {
     lsp.default_setup,
     clangd = function()
@@ -35,7 +35,7 @@ lsp.configure('lua_ls', {
 
 lsp.configure('qmlls', {
   --cmd = {'/usr/bin/qmlls.exe'}
-  cmd = {'/mnt/c/Qt/6.7.2/mingw_64/bin/qmlls.exe', '--build_dir', 'C:/Users/luker/Code/build-videoenhanceai/'}
+  --cmd = {'/mnt/c/Qt/6.7.2/mingw_64/bin/qmlls.exe', '--build_dir', 'C:/Users/luker/Code/build-videoenhanceai/'}
 })
 
 
@@ -84,11 +84,21 @@ lsp.on_attach(function(client, bufnr)
     vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, opts)
     vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
     vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, opts)
+
+    -- auto complete in insert
+    vim.keymap.set('i', '<C-Space>', '<C-x><C-o>', opts)
+    -- vim.keymap.set('i', '<C-CR>', '<C-y>', opts)
+
+    if client.name == "clangd" then
+        vim.keymap.set("n", "<leader>fo", "<cmd>ClangdSwitchSourceHeader<CR>", opts)
+    end
+    --client.server_capabilities.semanticTokensProvider = nil
+
 end)
 
 local lspconfig = require('lspconfig')
 lspconfig.qmlls.setup {
-  cmd = { "qmlls" },
+  --cmd = { "qmlls" },
   filetypes = { "qml" },
   root_dir = function(fname)
     return lspconfig.util.find_git_ancestor(fname) or vim.loop.os_homedir()
@@ -96,12 +106,11 @@ lspconfig.qmlls.setup {
   settings = {}
 }
 lspconfig.clangd.setup({
-  cmd = {
-    "clangd",
-    "--background-index",
-    "--compile-commands-dir=/mnt/c/Users/luker/Code/build-videoenhanceai/",
-    "--completion-style=detailed",
-    "--header-insertion=iwyu",
+  capabilities = {
+    textDocument = {
+      semanticHighlighting = false,
+    },
+    offsetEncoding = { 'utf-8' },
   },
   filetypes = {"c", "cpp"}, -- qml + js
   root_dir = lspconfig.util.root_pattern(

@@ -46,20 +46,6 @@ return require('packer').startup(function(use)
                         ["@text.title.qml"] = { fg = colors.blue, style = { "bold" } },
                         ["@text.literal.qml"] = { fg = colors.teal, style = { "italic" } },
                         ["@exception.qml"] = { fg = colors.red, style = { "bold" } },
-
-                        -- General highlights
-                        ["@constructor"] = { fg = colors.sapphire },
-                        ["@field"] = { fg = colors.rosewater },
-                        ["@parameter"] = { fg = colors.maroon },
-                        ["@variable.local"] = { fg = colors.mauve },
-                        ["@storageclass"] = { fg = colors.yellow, style = { "bold" } },
-                        ["@structure"] = { fg = colors.yellow },
-                        ["@constant"] = { fg = colors.peach },
-                        ["@conditional"] = { fg = colors.mauve, style = { "italic" } },
-                        ["@repeat"] = { fg = colors.mauve, style = { "underline" } },
-                        ["@annotation"] = { fg = colors.flamingo },
-                        ["@attribute"] = { fg = colors.blue },
-                        ["@event"] = { fg = colors.pink },
                     }
                 end
             })
@@ -67,10 +53,34 @@ return require('packer').startup(function(use)
         end
     }
     use { "rose-pine/neovim", as = "rose-pine", config = function() vim.cmd('colorscheme rose-pine') end}
+
+
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.8',
-        requires = { {'nvim-lua/plenary.nvim'} }
+        requires = { {'nvim-lua/plenary.nvim'} },
+        config = function()
+            require('telescope').setup{
+                defaults = {
+                    -- Exclude files in 'include/' directory for both find_files and live_grep
+                    file_ignore_patterns = { "include/.*" }  -- Optional for general ignoring
+                },
+                pickers = {
+                    find_files = {
+                        -- Explicitly tell find_files to exclude the include directory
+                        find_command = { "rg", "--files", "--hidden", "--glob", "!**/include/**" }
+                    },
+                    live_grep = {
+                        -- Exclude the include directory from live_grep search results
+                        additional_args = function()
+                            return { "--glob", "!**/include/**" }
+                        end
+                    }
+                }
+            }
+        end
     }
+
+
     use { 'nvim-treesitter/playground' }
     use { 'theprimeagen/harpoon' }
     use { 'mbbill/undotree' }
@@ -88,4 +98,5 @@ return require('packer').startup(function(use)
             {'L3MON4D3/LuaSnip'},
         }
     }
+     use 'tikhomirov/vim-glsl'
 end)
