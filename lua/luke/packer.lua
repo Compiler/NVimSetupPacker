@@ -62,7 +62,7 @@ return require('packer').startup(function(use)
             require('telescope').setup{
                 defaults = {
                     -- Exclude files in 'include/' directory for both find_files and live_grep
-                    file_ignore_patterns = { "include/.*" }  -- Optional for general ignoring
+                    file_ignore_patterns = { "include/.*", "lib/*" }  -- Optional for general ignoring
                 },
                 pickers = {
                     find_files = {
